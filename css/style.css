@@ -1,0 +1,135 @@
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9ce1e5;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.converter_block {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+    /* margin-bottom: 2rem; */
+    background-color: #4fa2a8;
+}
+
+.currency {
+    display: flex;
+    justify-content: center;
+}
+
+.input_first_value, .input_second_value {
+    width: 40%;
+    height: 26px;
+}
+
+.select_first_currency, .select_second_currency {
+    width: 60%;
+    height: 32px;
+}
+
+.button_reverse_calculation, .select_first_currency, .select_second_currency {
+    cursor: pointer;
+}
+
+.button_img {
+    width: 32px;
+    height: 24.6px;
+    padding: 0 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.currency_rate_block {
+    width: 100%;
+    background-color: #55afb5;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, th {
+    height: 1.5rem;
+}
+
+.table td {
+    border: 2px solid #4fa2a8;
+}
+
+thead th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4) {
+    border-top: 2px solid #4fa2a8;
+}
+
+thead th:nth-child(1) {
+    border-left: 2px solid #4fa2a8;
+}
+
+thead th:nth-child(4) {
+    border-right: 2px solid #4fa2a8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #9ae0e5;
+}
+
+tbody tr:nth-child(even), thead th {
+    background-color: #95d9de;
+}
+
+@media (max-width: 505px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .currency_rate_block, .converter_block {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    .currency_rate_block {
+        font-size: 0.6rem;
+    }
+}

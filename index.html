@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Конвертер валют</h1>
+        </header>
+
+        <div class="converter_block">
+            <div class="currency">
+                <input type="number" class="input_first_value" id="js-input-first-value">
+
+                <select name="first_currency" id="js-first-currency" class="select_first_currency">
+                    
+                </select>
+
+            </div>
+
+            <div class="change_values">
+                <button class="button_reverse_calculation" id="js-button-reverse-values">
+                    <img src="img/free-icon-switch-466154.png" alt="Поменять местами" class="button_img">
+                </button>
+            </div>
+
+            <div class="currency">
+                <input type="text" class="input_second_value"  id="js-input-second-value" disabled>
+
+                <select name="second_currency" id="js-second-currency" class="select_second_currency">
+                    
+                </select>
+
+            </div>
+        </div>
+
+        <div class="currency_rate_block">
+            <table class="table" id="currency_table">
+                <thead></thead>
+
+                <tr>
+                    <td>Сокращение</td>
+                    <td>Название валюты</td>
+                    <td>Номинал</td>
+                    <td>Курс</td>
+                </tr>
+
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

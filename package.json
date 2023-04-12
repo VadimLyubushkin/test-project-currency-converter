@@ -1,0 +1,19 @@
+{
+  "name": "test-project-currency-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimLyubushkin/test-project-currency-converter.git"
+  },
+  "author": "Vadim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VadimLyubushkin/test-project-currency-converter/issues"
+  },
+  "homepage": "https://github.com/VadimLyubushkin/test-project-currency-converter#readme"
+}
